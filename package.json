@@ -4,7 +4,9 @@
   "description": "Remove all duplicates from an unsorted list of email addresses",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "eslint": "./node_modules/.bin/eslint ./*.js",
+    "test": "./node_modules/.bin/_mocha"
   },
   "repository": {
     "type": "git",
