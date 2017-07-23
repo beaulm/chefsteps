@@ -1,0 +1,19 @@
+{
+  "name": "chefsteps",
+  "version": "1.0.0",
+  "description": "Remove all duplicates from an unsorted list of email addresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/beaulm/chefsteps.git"
+  },
+  "author": "Beau Lynn-Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beaulm/chefsteps/issues"
+  },
+  "homepage": "https://github.com/beaulm/chefsteps#readme"
+}
