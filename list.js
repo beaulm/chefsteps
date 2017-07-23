@@ -32,13 +32,13 @@ function knuthShuffle(input) {
   //While there are still items to be shuffled
   while(i) {
 
-    //Generate a random number which could be an index in the input array
-    let j = Math.floor(Math.random() * i--);
+	//Generate a random number which could be an index in the input array
+	let j = Math.floor(Math.random() * i--);
 
-    //Move the item at the randomly selected index to the end of the array
-    let temp = input[j];
-    input[j] = input[i];
-    input[i] = temp;
+	//Move the item at the randomly selected index to the end of the array
+	let temp = input[j];
+	input[j] = input[i];
+	input[i] = temp;
 
   }
 

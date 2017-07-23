@@ -1,15 +1,15 @@
 module.exports = {
 	forLoop: (randomArray) => {
+		let hash = {};
 		let tmpArray = [];
-		for(let i=0; i<randomArray.length; i++) {
-			if(tmpArray.indexOf(randomArray[i]) === -1) {
+		for(let i=0, end=randomArray.length; i<end; i++) {
+			if(!hash.hasOwnProperty(randomArray[i])) {
 				tmpArray.push(randomArray[i]);
+				hash[randomArray[i]] = true;
 			}
 		}
 		return tmpArray;
 	},
-
-	arrayFilter: (randomArray) => randomArray.filter((value, index, self) => self.indexOf(value) === index),
 
 	arrayToObject: (randomArray) => {
 		let hash = {};
@@ -21,5 +21,5 @@ module.exports = {
 
 	es6Set: (randomArray) => [...new Set(randomArray)],
 
-    names: ['forLoop', 'arrayFilter', 'arrayToObject', 'es6Set']
+	names: ['forLoop', 'arrayToObject', 'es6Set']
 }
